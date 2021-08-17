@@ -1,0 +1,17 @@
+{
+  "name": "myFirstTypescriptApp",
+  "version": "1.0.0",
+  "description": "my first typescript project",
+  "main": "app.ts",
+  "scripts": {
+    "dev": "tsc app.ts"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "author": "Ruzina",
+  "license": "ISC"
+}
