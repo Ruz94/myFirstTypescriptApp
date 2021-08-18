@@ -4,12 +4,16 @@
   "description": "my first typescript project",
   "main": "app.ts",
   "scripts": {
-    "dev": "tsc app.ts"
+    "compileandrun": "npm run compile && npm run dev",
+    "compile": "tsc app.ts",
+    "dev": "node app.js"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.6.1",
     "typescript": "^4.3.5"
   },
   "author": "Ruzina",

@@ -1,9 +1,6 @@
-import express from "express";
+import * as express from "express";
 
-var app = express();
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
-});
+const app = express();
 
 function addNumbersTypeScript(myArray: any[]): number {
   let number: number = 0;
@@ -13,16 +10,12 @@ function addNumbersTypeScript(myArray: any[]): number {
   return number;
 };
 
-const addNumbers = (myArray) => {
-  let number = 0;
-  myArray.forEach((myNumber) => {
-    number = number + myNumber;
-  });
-  return number;
-};
-
 app.get("/url", (req, res, next) => {
-  const response = addNumbersTypeScript([1, 2, 3, 4, 5]);
+  const response = addNumbersTypeScript([1, 2, 3, 4, 5, 6]);
   res.json(response);
   //   res.json(["Tony", "Lisa", "Michael", "Ginger", "Food"]);
+});
+
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
 });
