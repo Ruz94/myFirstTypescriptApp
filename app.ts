@@ -13,7 +13,6 @@ function addNumbersTypeScript(myArray: any[]): number {
 app.get("/url", (req, res, next) => {
   const response = addNumbersTypeScript([1, 2, 3, 4, 5, 6]);
   res.json(response);
-  //   res.json(["Tony", "Lisa", "Michael", "Ginger", "Food"]);
 });
 
 app.listen(3000, () => {
